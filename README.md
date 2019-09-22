@@ -1,5 +1,5 @@
 # Whatsapp
-A dark Whatsapp Client for Linux
+A dark and simple Whatsapp Client for Linux
 
 App made with electron
 
