@@ -11,5 +11,5 @@ extract it to "/opt/Whatsapp-linux-x64"
 
 execute with "/opt/Whatsapp-linux-x64/Whatsapp"
 
-Use https://appcenter.elementary.io/com.github.donadigo.appeditor/ 
+Use https://github.com/donadigo/appeditor 
 to creat a shortcut or use a similair app, or do it from scratch
