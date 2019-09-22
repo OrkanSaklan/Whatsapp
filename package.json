@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-client",
+  "version": "0.0.1",
+  "description": "Whatsapp",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . Whatsapp --platform linux --arch x64 --out dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/OrkanS/whatsapp-client.git"
+  },
+  "keywords": [
+    "whatsapp"
+  ],
+  "author": "Orkan Saklan",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/OrkanS/whatsapp-client#readme",
+  "devDependencies": {
+    "electron-installer-debian": "^2.0.1",
+    "electron-installer-windows": "^2.0.0",
+    "electron-nightly": "^8.0.0-nightly.20190920",
+    "electron-packager": "^14.0.6"
+  },
+  "dependencies": {
+    "electron-store": "^5.0.0"
+  }
+}
