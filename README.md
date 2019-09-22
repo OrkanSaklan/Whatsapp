@@ -12,4 +12,4 @@ extract it to "/opt/Whatsapp-linux-x64"
 execute with "/opt/Whatsapp-linux-x64/Whatsapp"
 
 Use https://github.com/donadigo/appeditor 
-to create a shortcut or use a similair app, or do it from scratch
+to create a shortcut or use a similar app, or do it from scratch
