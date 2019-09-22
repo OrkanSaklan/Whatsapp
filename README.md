@@ -4,6 +4,7 @@ A dark Whatsapp Client for Linux
 App made with electron
 
 // Installation
+
 Download "Whatsapp-linux-x64.tar.gz"
 
 extract it to "/opt/Whatsapp-linux-x64"
