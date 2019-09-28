@@ -30,6 +30,16 @@ body {
     background: rgba(0,0,0,0.6) !important;
  }
 
+ /* custom edit */
+ html[dir] .message-in ._2Wx_5 {
+    background: var(--darker) !important;
+}
+
+html[dir] .message-out ._2Wx_5 {
+    background: var(--msgout) !important;
+}
+/* custom edit end /*
+
 /* Scrollbar track. */
 *::-webkit-scrollbar-track {
     background-color: var(--shadow); }
@@ -215,9 +225,9 @@ html[dir] ._5UNoc ._3hnO5 {
 
 /* New message indicator. */
 #side .P6z4j {
-    color: var(--accent2) !important;
+    color: var(--accent) !important;
     background-color: var(--darker) !important;
-    box-shadow: inset 0 0 0 2px var(--accent2); }
+    box-shadow: inset 0 0 0 2px var(--accent); }
 
 
 /* Settings. */
@@ -248,13 +258,17 @@ html[dir] ._5UNoc ._3hnO5 {
 ._1KDYa ._1JS2G,
 ._1KDYa ._2Lbqu {
     background-color: rgba(0,0,0,0.5) !important; }
+/* Modal footer and +/- buttons */
+html[dir] ._22aOT, html[dir] ._1DKwn {
+    background-color: var(--darker) !important; }
+/* Editor backgroud */
+html[dir] ._3979j {
+    background-color: var(--dark) !important; }
+
 /* Text color. */
 ._1KDYa *, .i1XSV._3Q3ui {
-    color: var(--light) !important;
+    color: var(--light);
 }
-/* Zoom in/out. */
-._2LALH {
-    background-color: var(--dark) !important; }
 
 /* Option/select elements. */
 .Fzl83 select {
@@ -431,7 +445,7 @@ html[dir] ._2UaNq._3fAgu {
     color: var(--light);
     border-bottom: 2px solid var(--accent) !important; }
 /* Unknown User's name. */
-html[dir=ltr] body ._1F9Ap {
+html[dir=ltr] ._1F9Ap {
     color: var(--light) !important;
 }
 /* User's name. */
@@ -458,8 +472,8 @@ html[dir=ltr] body ._1F9Ap {
 .app ._1C9rS ._2LSbZ ._2UaNq * {
     color: var(--light); }
 /* Admin color. */
-.app ._1C9rS ._2LSbZ ._2e8Mu {
-    border: 2px solid var(--accent); }
+html[dir] .FPZFa {
+    border: 1px solid var(--accent) !important; }
 
 
 /* Search messages. TODO: Apply this to all search elements. */
@@ -513,6 +527,11 @@ html[dir=ltr] body ._1F9Ap {
 /* Read by. */
 ._1C9rS .rK2ei ._3La1s .X7YrQ > div {
     background-color: var(--dark) !important; }
+/* Forwarding info */
+._3XHR- {
+    background-color: var(--darker) !important;
+    border-top: 1px solid var(--dark) !important;
+}
 
 /* Media/docs/links section. */
 ._1C9rS ._27U_m {
@@ -647,7 +666,7 @@ html[dir] ._3cukQ ._1mrMQ, html[dir] ._1o6AT ._1mrMQ {
     transition: 50ms ease-in-out !important; }
 
 /* Typing... */
-.vdXUe {
+._2ZAIy {
     color: var(--accent) !important; }
 
 /* System messages. */
@@ -718,18 +737,22 @@ footer ._1ebw2 > div:last-child > div svg {
     background-color: var(--dark); }
 
 /* Mention group members. */
-.Uukb4, .AiI_S.vg0uI {
+.Uukb4, ._1Yz8K.XSeqj {
     color: var(--light);
     border-left: none !important;
     background-color: var(--darker) !important;
     transition: 300ms ease-in-out !important; }
 
-.tzmti {
+._2j-wI {
     border: none !important;
     background-color: var(--darker) !important; }
 
-.AiI_S.vg0uI:hover {
+._1Yz8K.XSeqj {
     background-color: var(--dark) !important; }
+
+.matched-text {
+    color: var(--accent); !important;
+}
 
 /* Wrapper. */
 .Uukb4 ._3v_lq {
@@ -843,12 +866,20 @@ footer ._1ebw2 > div:last-child > div svg {
 /* Active button. */
 ._1x_c3.bRYFY path {
     fill: var(--accent) !important; }
+/* Sticker drawer scroll arrow */
+html[dir] ._26IFT {
+    background-color: var(--darker) !important; }
 
 /* Search emojis. */
 .DWACj label,
 ._2Qm0c,
 ._2hMsh {
     background-color: var(--dark) !important; }
+/* Search emojis using ":" */
+html[dir] ._2mlOb, html[dir=ltr] ._2mlOb {
+    background-color: var(--darker) !important; }
+html[dir=ltr] ._2mlOb {
+    border-left: 1px solid var(--darker) !important; }
 /* Text color. */
 .DWACj label input,
 ._2hMsh input,
@@ -1013,7 +1044,7 @@ span[data-icon="status-v3-unread"] > svg > path:first-child {
     color: var(--light); }
 
 /* Reply to status. */
-.C534L ._3PmkG {
+.QRsOy {
     border-radius: 5px !important;
     background-color: var(--dark) !important; }
 
@@ -1126,12 +1157,14 @@ span[data-icon="delete-danger"] svg path {
 span[data-icon="audio-file"] svg path {
     fill: rgba(255, 173, 31, 0.8) !important; }
 /* Audio length bar. */
-._22cMG.fS1bA .nDKsM {
+html[dir] ._2PmJH ._1N8Pv, html[dir] ._38Akx._2gO-- ._1N8Pv {
     background-color: var(--accent) !important; }
 /* Slider thumb. */
 input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
     background: var(--accent) !important; }
+html[dir] ._38Akx ._30LFW::-webkit-slider-runnable-track, html[dir] ._2PmJH ._30LFW::-webkit-slider-runnable-track {
+    background-color: var(--light) !important; }
 
 /* Rounded buttons. */
 span svg > path[fill="#00BFA5"] {
