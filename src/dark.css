@@ -38,6 +38,10 @@ body {
 html[dir] .message-out ._2Wx_5 {
     background: var(--msgout) !important;
 }
+
+._315-i {
+    color: var(--light) !important;
+}
 /* custom edit end /*
 
 /* Scrollbar track. */
